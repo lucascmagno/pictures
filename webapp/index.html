@@ -1,10 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta charset="ISO-8859-1">
-<title>In�cio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db; /* Azul claro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2980b9; /* Azul um pouco mais escuro */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo {
+	width: 320px;
+    margin: 10px;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    border: 2px solid #2980b9; /* Borda azul */
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #3498db; /* Cor do cabeçalho da galeria */
+}
+
+/* Adicione mais estilos personalizados aqui */
+
+    
+    </style>
 </head>
 <body>
-
+    <header>
+        <h1>Pictures</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="./pages/cadastro.html">Cadastre-se</a></li>
+            <li><a href="./pages/cadastroNoticia.html">Cadastrar Notícias</a></li>
+            <li><a href="./pages/noticias.jsp">Aba de notícias</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="./img/imagemDefault.jpg" alt="Foto 1">
+                <p>Legenda da Foto 1</p>
+            </div>
+            <div class="photo">
+                <img src="./img/imagemDefault.jpg" alt="Foto 2">
+                <p>Legenda da Foto 2</p>
+            </div>
+            <div class="photo">
+                <img src="./img/imagemDefault.jpg" alt="Foto 2">
+                <p>Legenda da Foto 2</p>
+            </div>
+            <div class="photo">
+                <img src="./img/imagemDefault.jpg" alt="Foto 2">
+                <p>Legenda da Foto 2</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
